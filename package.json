@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export && cp -r out/* docs/"
+    "export": "next export && rm -rf docs/* && cp -r out/* docs/"
   },
   "repository": {
     "type": "git",

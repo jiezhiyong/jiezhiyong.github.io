@@ -295,8 +295,8 @@ packages:
   bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
 
-  caniuse-lite@1.0.30001435:
-    resolution: {integrity: sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==}
+  caniuse-lite@1.0.30001641:
+    resolution: {integrity: sha512-Phv5thgl67bHYo1TtMY/MurjkHhV4EDaCosezRXgZ8jzA/Ub+wjxAvbGvjoFENStinwi5kCyOYV3mi5tOGykwA==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -1301,7 +1301,7 @@ snapshots:
 
   bail@2.0.2: {}
 
-  caniuse-lite@1.0.30001435: {}
+  caniuse-lite@1.0.30001641: {}
 
   ccount@2.0.1: {}
 
@@ -2040,7 +2040,7 @@ snapshots:
     dependencies:
       '@next/env': 13.0.6
       '@swc/helpers': 0.4.14
-      caniuse-lite: 1.0.30001435
+      caniuse-lite: 1.0.30001641
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
