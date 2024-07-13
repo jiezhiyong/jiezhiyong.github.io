@@ -6,8 +6,6 @@ const withNextra = require("nextra")({
 module.exports = withNextra({
   // 禁用图片优化以支持静态导出
   images: { unoptimized: true },
-  // 确保所有导出的路径以斜杠结尾s
-  exportTrailingSlash: true,
   // 页面路径映射
   exportPathMap: async function (defaultPathMap, { dev, dir, outDir }) {
     return {
