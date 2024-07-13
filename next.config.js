@@ -4,8 +4,8 @@ const withNextra = require("nextra")({
 });
 
 module.exports = withNextra({
-  basePath: '/jiezhiyong.github.io',
-  assetPrefix: '/jiezhiyong.github.io/',
+  basePath: '/docs',
+  assetPrefix: '/docs/',
   // 禁用图片优化以支持静态导出
   images: { unoptimized: true },
   // 页面路径映射
