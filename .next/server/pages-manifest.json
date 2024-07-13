@@ -1,11 +1,11 @@
 {
-  "/about": "pages/about.html",
-  "/advanced": "pages/advanced.html",
-  "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/advanced/satori": "pages/advanced/satori.html",
+  "/advanced": "pages/advanced.html",
   "/another": "pages/another.html",
   "/": "pages/index.html",
-  "/_app": "pages/_app.js",
+  "/about": "pages/about.html",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }
