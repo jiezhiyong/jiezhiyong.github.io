@@ -5,13 +5,13 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/E1smp0VmJRqT2fma0R0n3/_buildManifest.js",
-    "static/E1smp0VmJRqT2fma0R0n3/_ssgManifest.js"
+    "static/HRnWkpRHxZgxOXoekZ8aL/_buildManifest.js",
+    "static/HRnWkpRHxZgxOXoekZ8aL/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack-c6e0c45ea4c5c50a.js",
+      "static/chunks/webpack-eb717e91c59f04b2.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4d6cd2cbc9858beb.js",
       "static/css/93ad2b9badc7a8f8.css",
@@ -19,19 +19,19 @@
       "static/chunks/pages/index-d919eb53024fb1e5.js"
     ],
     "/_app": [
-      "static/chunks/webpack-c6e0c45ea4c5c50a.js",
+      "static/chunks/webpack-eb717e91c59f04b2.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4d6cd2cbc9858beb.js",
       "static/chunks/pages/_app-ca73eab6798d1abf.js"
     ],
     "/_error": [
-      "static/chunks/webpack-c6e0c45ea4c5c50a.js",
+      "static/chunks/webpack-eb717e91c59f04b2.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4d6cd2cbc9858beb.js",
       "static/chunks/pages/_error-8e212447b4645e4a.js"
     ],
     "/about": [
-      "static/chunks/webpack-c6e0c45ea4c5c50a.js",
+      "static/chunks/webpack-eb717e91c59f04b2.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4d6cd2cbc9858beb.js",
       "static/css/93ad2b9badc7a8f8.css",
@@ -39,7 +39,7 @@
       "static/chunks/pages/about-e60d30dfafbb7598.js"
     ],
     "/advanced": [
-      "static/chunks/webpack-c6e0c45ea4c5c50a.js",
+      "static/chunks/webpack-eb717e91c59f04b2.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4d6cd2cbc9858beb.js",
       "static/css/93ad2b9badc7a8f8.css",
@@ -47,7 +47,7 @@
       "static/chunks/pages/advanced-9200a143817157f9.js"
     ],
     "/advanced/satori": [
-      "static/chunks/webpack-c6e0c45ea4c5c50a.js",
+      "static/chunks/webpack-eb717e91c59f04b2.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4d6cd2cbc9858beb.js",
       "static/css/93ad2b9badc7a8f8.css",
@@ -55,7 +55,7 @@
       "static/chunks/pages/advanced/satori-58db042197e2bbf4.js"
     ],
     "/another": [
-      "static/chunks/webpack-c6e0c45ea4c5c50a.js",
+      "static/chunks/webpack-eb717e91c59f04b2.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4d6cd2cbc9858beb.js",
       "static/css/93ad2b9badc7a8f8.css",
