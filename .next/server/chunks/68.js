@@ -6381,7 +6381,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.addBasePath = addBasePath;
 var _addPathPrefix = __webpack_require__(1751);
 var _normalizeTrailingSlash = __webpack_require__(9819);
-const basePath =  false || "";
+const basePath = "/jiezhiyong.github.io" || 0;
 function addBasePath(path, required) {
     if (false) {}
     return (0, _normalizeTrailingSlash).normalizePathTrailingSlash((0, _addPathPrefix).addPathPrefix(path, basePath));
@@ -6456,7 +6456,7 @@ Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
 exports.getDomainLocale = getDomainLocale;
-const basePath = (/* unused pure expression or super */ null && ( false || ""));
+const basePath = (/* unused pure expression or super */ null && ("/jiezhiyong.github.io" || 0));
 function getDomainLocale(path, locale, locales, domainLocales) {
     if (false) {} else {
         return false;
@@ -6483,7 +6483,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.hasBasePath = hasBasePath;
 var _pathHasPrefix = __webpack_require__(4567);
-const basePath =  false || "";
+const basePath = "/jiezhiyong.github.io" || 0;
 function hasBasePath(path) {
     return (0, _pathHasPrefix).pathHasPrefix(path, basePath);
 }
@@ -6652,7 +6652,7 @@ var _imageConfig = __webpack_require__(5843);
 var _imageConfigContext = __webpack_require__(744);
 var _warnOnce = __webpack_require__(618);
 var _imageLoader = _interop_require_default(__webpack_require__(9552));
-const configEnv = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image/","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true};
+const configEnv = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/jiezhiyong.github.io/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":true};
 const allImgs = new Map();
 let perfObserver;
 if (true) {
@@ -7421,15 +7421,7 @@ const normalizePathTrailingSlash = (path)=>{
         return path;
     }
     const { pathname , query , hash  } = (0, _parsePath).parsePath(path);
-    if (true) {
-        if (/\.[^/]+\/?$/.test(pathname)) {
-            return `${(0, _removeTrailingSlash).removeTrailingSlash(pathname)}${query}${hash}`;
-        } else if (pathname.endsWith("/")) {
-            return `${pathname}${query}${hash}`;
-        } else {
-            return `${pathname}/${query}${hash}`;
-        }
-    }
+    if (false) {}
     return `${(0, _removeTrailingSlash).removeTrailingSlash(pathname)}${query}${hash}`;
 };
 exports.normalizePathTrailingSlash = normalizePathTrailingSlash;
@@ -7454,7 +7446,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.removeBasePath = removeBasePath;
 var _hasBasePath = __webpack_require__(3933);
-const basePath =  false || "";
+const basePath = "/jiezhiyong.github.io" || 0;
 function removeBasePath(path) {
     if (false) {}
     path = path.slice(basePath.length);
@@ -8455,7 +8447,7 @@ function getMiddlewareData(source, response, options) {
         i18n: {
             locales: options.router.locales
         },
-        trailingSlash: Boolean(true)
+        trailingSlash: Boolean(false)
     };
     const rewriteHeader = response.headers.get("x-nextjs-rewrite");
     let rewriteTarget = rewriteHeader || response.headers.get("x-nextjs-matched-path");
@@ -9711,7 +9703,7 @@ class Router {
         // if auto prerendered and dynamic route wait to update asPath
         // until after mount to prevent hydration mismatch
         const autoExportDynamic = (0, _isDynamic).isDynamicRoute(pathname1) && self.__NEXT_DATA__.autoExport;
-        this.basePath =  false || "";
+        this.basePath = "/jiezhiyong.github.io" || 0;
         this.sub = subscription;
         this.clc = null;
         this._wrapApp = wrapApp;
