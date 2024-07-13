@@ -17,6 +17,7 @@ exports.modules = {
 
 const config = {
     logo: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+        className: "font-bold",
         children: "My Project"
     }),
     project: {

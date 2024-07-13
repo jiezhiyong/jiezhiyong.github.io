@@ -1,0 +1,1773 @@
+{
+  "基础语法": {
+    "scope": "typescriptreact",
+    "prefix": "tw_0基础语法",
+    "body": [
+      "<p><i>单位</i>px-0, 1tw = 4px = 0.04rem</p>",
+      "<p><i>任意值</i>pl-[40px]</p>",
+      "<p><i>负值</i>-z-10</p>",
+      "<p><i>important</i>!text-sky-500</p>",
+      "<p><i>响应式设计</i>sm:text-center md:text-right</p>",
+      "<p><i>暗黑模式</i>dark:text-pink-500</p>",
+      "<p><i>hover</i>focus, active: hover: text-red-500</p>",
+      "<p><i>父状态</i>group-hover:text-green-500</p>",
+      "<p><i>兄弟状态</i>peer、block peer-invalid:hidden</p>",
+      "<p><i>嵌套组</i>group/item、group-hover/item:text-orange-500</p>",
+      "<p><i>任意组</i>group style-b、hidden group-[.style-b]:block</p>",
+      "<p><i>子级</i>*:text-yellow-500</p>",
+      "<p><i>后代</i>has-[:checked]:* has-[:focus]:* has-[img]:*</p>",
+      "<p><i>组后代</i>group、group-has-[a]:block</p>",
+      "<p><i>同辈后代</i>peer、peer-has-[:checked]:hidden</p>",
+      "<p><i>first</i>last, odd, even: last:text-purple-500</p>",
+      "<p><i>伪元素</i>`after:content-[*] after:*`</p>",
+      "<p><i>占位符文本</i>placeholder:text-slate-400</p>",
+      "<p><i>文件输入按钮</i>file:rounded-full file:*</p>",
+      "<p><i>其他</i>列表标记、突出显示的文本、首行和首字母、对话背景</p>"
+    ],
+    "description": "基础语法"
+  },
+  // Group => Layout
+  "纵横比": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.aspect-ratio",
+    "body": [
+      "{/* https://tailwindcss.com/docs/aspect-ratio */}",
+      "<div className=\"aspect-auto\">",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <span>aspect-auto, aspect-square, aspect-video, aspect-[4/3]</span>",
+      "</div>"
+    ],
+    "description": "控制元素纵横比"
+  },
+  "容器": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.container",
+    "body": [
+      "{/* https://tailwindcss.com/docs/container */}",
+      "<div className=\"container mx-auto bg-stone-50 p-[30px]\">",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "</div>"
+    ],
+    "description": "将元素的宽度固定至当前断点"
+  },
+  "列数": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.columns",
+    "body": [
+      "{/* https://tailwindcss.com/docs/tailwindcss */}",
+      "<div className=\"columns-2 gap-[10px] space-y-[10px] lg:columns-3\">",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "</div>"
+    ],
+    "description": "控制元素内列数"
+  },
+  "后中断": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.break-after",
+    "body": [
+      "{/* https://tailwindcss.com/docs/break-after */}",
+      "<div className=\"columns-2\">",
+      "  <p>columns 1.1 ...</p>",
+      "  <p>columns 1.2 ...</p>",
+      "  <p className=\"break-after-column\">columns 2.1 ...</p>",
+      "  <p>columns 2.2 ...</p>",
+      "</div>"
+    ],
+    "description": "控制元素之后是否应发生分页, 分列, 分区"
+  },
+  "前中断": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.break-before",
+    "body": [
+      "{/* https://tailwindcss.com/docs/break-before */}",
+      "<div className=\"columns-2\">",
+      "  <p>columns 1.1 ...</p>",
+      "  <p className=\"break-before-column\">columns 1.2 ...</p>",
+      "  <p>columns 2.1 ...</p>",
+      "  <p>columns 2.2 ...</p>",
+      "</div>"
+    ],
+    "description": "控制元素之前是否应发生分页, 分列, 分区"
+  },
+  "内中断": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.break-inside",
+    "body": [
+      "{/* https://tailwindcss.com/docs/break-inside */}",
+      "<div className=\"columns-2\">",
+      "  <p>columns 1.1 ...</p>",
+      "  <p className=\"break-inside-avoid-column\">",
+      "    columns 1.2 ... columns columns columns columns columns columns",
+      "  </p>",
+      "  <p>columns 2.1 ...</p>",
+      "  <p>columns 2.2 ...</p>",
+      "</div>"
+    ],
+    "description": "控制元素内部是否应发生分页, 分列, 分区"
+  },
+  "盒装饰": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.box-decoration-break",
+    "body": [
+      "{/* https://tailwindcss.com/docs/box-decoration-break */}",
+      "<span className=\"bg-gradient-to-r from-indigo-600 to-pink-500 box-decoration-clone px-[30px] text-[100px] leading-[1]\">",
+      "  Tailwind CSS",
+      "  <br />",
+      "  Tailwind CSS",
+      "</span>"
+    ],
+    "description": "控制如何在多行, 多列或多页中呈现元素片段"
+  },
+  "盒模型": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.box-sizing",
+    "body": [
+      "{/* https://tailwindcss.com/docs/box-sizing */}",
+      "<div className=\"box-content\">box-border, box-content</div>"
+    ],
+    "description": "控制浏览器如何计算元素总大小，默认使用 box-border"
+  },
+  "布局类型": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.display",
+    "body": [
+      "{/* https://tailwindcss.com/docs/display */}",
+      "<span className=\"block\">",
+      "  block, inline-block, inline, flex, inline-flex, table, inline-table,",
+      "  table-caption, table-cell, table-column, table-column-group,",
+      "  table-footer-group, table-header-group, table-row-group, table-row,",
+      "  flow-root, grid, inline-grid, contents, list-item, hidden",
+      "</span>"
+    ],
+    "description": "控制元素显示框类型"
+  },
+  "浮动": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.float",
+    "body": [
+      "{/* https://tailwindcss.com/docs/float */}",
+      "<span className=\"float-left\">",
+      "  float-start, float-end, float-right, float-left, float-none",
+      "</span>"
+    ],
+    "description": "控制元素浮动"
+  },
+  "清除浮动": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.clear",
+    "body": [
+      "{/* https://tailwindcss.com/docs/clear */}",
+      "<article>",
+      "  <img",
+      "    className=\"float-left mr-[20px] w-[180px] group-hover:float-right group-hover:ml-[20px]\"",
+      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    alt=\"\"",
+      "  />",
+      "  <img",
+      "    className=\"float-right ml-[20px] w-[180px] group-hover:float-right group-hover:ml-[20px]\"",
+      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    alt=\"\"",
+      "  />",
+      "  <p className=\"clear-both text-justify\">",
+      "    Maybe we can live without libraries, people like you and me. Maybe.",
+      "    Sure, were too old to change the world, but what about that kid,",
+      "    sitting down",
+      "  </p>",
+      "</article>"
+    ],
+    "description": "清除浮动"
+  },
+  "隔离": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.isolation",
+    "body": ["{/* https://tailwindcss.com/docs/isolation */}"],
+    "description": "控制元素是否应明确创建新的堆叠上下文"
+  },
+  "对象适配": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.object-fit",
+    "body": [
+      "{/* https://tailwindcss.com/docs/object-fit */}",
+      "<div className=\"bg-stone-100 p-[20px] text-center\">",
+      "  <img",
+      "    className=\"h-[150px] w-full object-cover\" // more: object-contain, object-fill, object-scale-down, object-none",
+      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    alt=\"\"",
+      "  />",
+      "</div>"
+    ],
+    "description": "控制如何调整元素内容大小"
+  },
+  "对象位置": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.object-position",
+    "body": [
+      "{/* https://tailwindcss.com/docs/object-position */}",
+      "<div className=\"bg-stone-100 p-[20px] text-center\">",
+      "  <img",
+      "    className=\"h-[150px] w-full object-none object-left-top\"",
+      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    alt=\"\"",
+      "  />",
+      "</div>"
+    ],
+    "description": "控制元素内容应如何在其容器中定位 eg: object-left-top, object-top, object-right-top, object-left, object-center, object-right, object-left-bottom, object-bottom, object-right-bottom"
+  },
+  "溢出": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.overflow",
+    "body": [
+      "{/* https://tailwindcss.com/docs/overflow */}",
+      "<div className=\"overflow-hidden\">",
+      "  overflow-auto, overflow-hidden, overflow-clip, overflow-visible,",
+      "  overflow-scroll, overflow-x-auto, overflow-y-auto, overflow-x-hidden,",
+      "  overflow-y-hidden, overflow-x-clip, overflow-y-clip, overflow-x-visible,",
+      "  overflow-y-visible, overflow-x-scroll",
+      "</div>"
+    ],
+    "description": "控制元素如何处理对容器来说太大的内容"
+  },
+  "滚动": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.overscroll",
+    "body": [
+      "{/* https://tailwindcss.com/docs/overscroll */}",
+      "<div className=\"h-[150px] overflow-auto overscroll-contain\">",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "</div>"
+    ],
+    "description": "控制浏览器在到达滚动区域边界时的行为 eg: overflow-auto, overflow-hidden, overflow-clip, overflow-visible, overflow-scroll, overflow-x-auto, overflow-y-auto, overflow-x-hidden, overflow-y-hidden, overflow-x-clip, overflow-y-clip, overflow-x-visible, overflow-y-visible, overflow-x-scroll"
+  },
+  "定位": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.position",
+    "body": [
+      "{/* https://tailwindcss.com/docs/position */}",
+      "<div className=\"t-0 r-0 b-0 l-0 absolute\" />"
+    ],
+    "description": "控制元素如何在DOM中定位 eg: static, fixed, absolute, relative, sticky"
+  },
+  "位置": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.top-right-bottom-left",
+    "body": [
+      "{/* https://tailwindcss.com/docs/top-right-bottom-left */}",
+      "<div className=\"relative h-[200px] bg-stone-100\">",
+      "  <div className=\"absolute inset-0 bg-blue-500 text-center leading-[200px]\">",
+      "    inset-0",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "控制定位元素位置 eg: inset-0, inset-x-0, inset-y-0, top-0, top-[10px], top-1/3, top-full"
+  },
+  "可见性": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.visibility",
+    "body": [
+      "{/* https://tailwindcss.com/docs/visibility */}",
+      "<div className=\"group flex gap-[10px] leading-[56px] *:size-[56px] *:bg-sky-400 *:text-center\">",
+      "  <div>01</div>",
+      "  <div className=\"invisible group-hover:visible\">02</div>",
+      "  <div>03</div>",
+      "</div>"
+    ],
+    "description": "控制元素可见性 eg: visible, invisible, collapse"
+  },
+  "层级": {
+    "scope": "typescriptreact",
+    "prefix": "tw_布局.z-index",
+    "body": [
+      "{/* https://tailwindcss.com/docs/z-index */}",
+      "<div className=\"relative z-10\" />"
+    ],
+    "description": "控制元素堆栈顺序 eg: z-0, z-10, ..., z-50, z-auto, z-[100]"
+  },
+  // Group => Flexbox & Grid
+  "Grid": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.grid",
+    "body": [
+      "<ul className=\"grid grid-cols-3 gap-3 text-center *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "  <li className=\"col-span-2 col-start-2 !bg-pink-500\">04</li>",
+      "</ul>",
+      "<br />",
+      "<ul className=\"grid grid-flow-col grid-rows-3 gap-3 text-center *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "  <li>04</li>",
+      "  <li>05</li>",
+      "  <li>06</li>",
+      "  <li>07</li>",
+      "</ul>"
+    ],
+    "description": "创建网格布局 eg: grid, gap-*, gap-x-*, gap-y-*, grid-cols-*, col-span-*, col-start-*, col-end-*, grid-flow-col, row-span-*, row-start-*, row-end-*"
+  },
+  "Inline Grid": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.inline-grid",
+    "body": [
+      "<div className=\"space-x-[20px] overflow-x-scroll whitespace-nowrap\">",
+      "  <ul className=\"inline-grid grid-cols-3 gap-[10px] text-center *:w-[120px] *:bg-sky-500\">",
+      "    <li>01</li>",
+      "    <li>02</li>",
+      "    <li>03</li>",
+      "    <li>04</li>",
+      "    <li>05</li>",
+      "    <li>06</li>",
+      "  </ul>",
+      "  <ul className=\"inline-grid grid-cols-3 gap-[10px] text-center *:w-[120px] *:bg-sky-500\">",
+      "    <li>A</li>",
+      "    <li>B</li>",
+      "    <li>C</li>",
+      "    <li>D</li>",
+      "    <li>E</li>",
+      "    <li>F</li>",
+      "  </ul>",
+      "</div>"
+    ],
+    "description": "创建内联网格布局"
+  },
+  "弹性基础": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.flex-basis",
+    "body": [
+      "{/* https://tailwindcss.com/docs/flex-basis */}",
+      "<ul className=\"flex flex-row space-x-4 *:flex *:h-14 *:items-center *:justify-center *:bg-fuchsia-500 *:shadow-lg\">",
+      "  <li className=\"basis-1/4\">1/4</li>",
+      "  <li className=\"basis-1/3\">1/3</li>",
+      "  <li className=\"basis-[50%]\">50%</li>",
+      "</ul>"
+    ],
+    "description": "控制flex项初始大小"
+  },
+  "弹性方向": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.flex-direction",
+    "body": [
+      "{/* https://tailwindcss.com/docs/flex-direction */}",
+      "<ul className=\"flex flex-row-reverse gap-x-4 *:flex *:w-full *:items-center *:justify-center *:bg-fuchsia-500 *:shadow-lg\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>",
+      "<br/>",
+      "<ul className=\"flex flex-col-reverse gap-y-4 *:flex *:h-14 *:items-center *:justify-center *:bg-purple-500 *:shadow-lg\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制flex项方向 eg: flex-row, flex-row-reverse, flex-col, flex-col-reverse"
+  },
+  "弹性包装": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.flex-wrap",
+    "body": [
+      "{/* https://tailwindcss.com/docs/flex-wrap */}",
+      "<ul className=\"flex flex-wrap gap-3 text-center *:w-2/5 *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制flex项包装方式 eg: flex-wrap, flex-wrap-reverse, flex-nowrap"
+  },
+  "弹性大小": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.flex",
+    "body": [
+      "{/* https://tailwindcss.com/docs/flex */}",
+      "<ul className=\"flex gap-3 text-center *:bg-sky-500\">",
+      "  <li className=\"w-20 flex-none\">none</li>",
+      "  <li className=\"w-40 flex-initial\">initial</li>",
+      "  <li className=\"w-60 flex-1\">1</li>",
+      "  <li className=\"w-80 flex-auto\">auto</li>",
+      "</ul>"
+    ],
+    "description": "控制flex项如何增长和缩小 eg: flex-1, flex-auto, flex-none, flex-initial"
+  },
+  "弹性生长": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.flex-grow",
+    "body": [
+      "{/* https://tailwindcss.com/docs/order */}",
+      "<ul className=\"flex gap-3 text-center *:bg-sky-500\">",
+      "  <li className=\"w-20 grow\">grow</li>",
+      "  <li className=\"w-40 grow-0\">grow-0</li>",
+      "</ul>"
+    ],
+    "description": "控制flex项如何增长 eg: grow, grow-0"
+  },
+  "弹性收缩": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.flex-shrink",
+    "body": [
+      "{/* https://tailwindcss.com/docs/order */}",
+      "<ul className=\"flex gap-3 text-center *:bg-sky-500\">",
+      "  <li className=\"w-[60%] shrink\">shrink</li>",
+      "  <li className=\"w-[60%] shrink-0\">shrink-0</li>",
+      "</ul>"
+    ],
+    "description": "控制flex项如何收缩 eg: shrink, shrink-0"
+  },
+  "顺序": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.order",
+    "body": [
+      "{/* https://tailwindcss.com/docs/order */}",
+      "<ul className=\"flex gap-3 text-center *:grow *:bg-sky-500\">",
+      "  <li className=\"order-last\">1.order-last</li>",
+      "  <li>2</li>",
+      "  <li className=\"-order-1\">3.-order-1</li>",
+      "  <li className=\"order-first\">4.order-first</li>",
+      "</ul>"
+    ],
+    "description": "控制flex和grid项顺序 eg: order-*, order-first, order-last, order-none"
+  },
+  "网格模板列": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.subgrid.columns",
+    "body": [
+      "{/* https://tailwindcss.com/docs/grid-template-columns */}",
+      "<ul className=\"grid grid-cols-4 gap-3 text-center *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "  <li>04</li>",
+      "  <li>05</li>",
+      "  <ul className=\"col-span-3 grid grid-cols-subgrid !bg-transparent *:bg-pink-500\">",
+      "    <li className=\"col-start-2\">06</li>",
+      "  </ul>",
+      "</ul>"
+    ],
+    "description": "在网格布局中指定列 eg: grid-cols-subgrid, grid-cols-*, col-span-*, ..."
+  },
+  "网格列": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.grid-column",
+    "body": [
+      "{/* https://tailwindcss.com/docs/grid-column */}",
+      "<ul className=\"grid grid-cols-4 gap-3 text-center *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li className=\"col-span-2\">col-span-*, col-start-*, col-end-*</li>",
+      "</ul>"
+    ],
+    "description": "控制元素如何调整大小以及如何在网格列中放置"
+  },
+
+  "网格模板行": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.subgrid.rows",
+    "body": [
+      "{/* https://tailwindcss.com/docs/grid-template-rows */}",
+      "<ul className=\"grid grid-flow-col grid-rows-3 gap-3 text-center *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "  <li>04</li>",
+      "  <ul className=\"row-span-2 grid grid-rows-subgrid !bg-transparent *:bg-pink-500\">",
+      "    <li className=\"row-start-2\">05</li>",
+      "  </ul>",
+      "  <li>06</li>",
+      "  <li>07</li>",
+      "  <li>08</li>",
+      "</ul>"
+    ],
+    "description": "在网格布局中指定行 eg: grid-rows-subgrid, grid-rows-*, row-span-*, ..."
+  },
+  "网格行": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.grid-row",
+    "body": [
+      "{/* https://tailwindcss.com/docs/grid-column */}",
+      "<ul className=\"grid grid-flow-col grid-rows-3 gap-3 text-center *:bg-sky-500\">",
+      "  <li className=\"row-span-3\">01</li>",
+      "  <li className=\"col-span-2\">02</li>",
+      "  <li className=\"col-span-2 row-span-2\">",
+      "    row-span-*, row-start-*, row-end-*",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "控制元素如何调整大小以及如何在网格行中放置"
+  },
+  "网格浮动": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.grid-auto-flow",
+    "body": [
+      "{/* https://tailwindcss.com/docs/grid-auto-flow */}",
+      "<ul className=\"grid grid-flow-dense grid-cols-3 grid-rows-3 gap-3 text-center *:bg-sky-500\">",
+      "  <li className=\"col-span-2\">01</li>",
+      "  <li className=\"col-span-2\">02</li>",
+      "  <li>03</li>",
+      "  <li>04</li>",
+      "  <li>05</li>",
+      "</ul>"
+    ],
+    "description": "控制网格中元素如何自动放置 eg: grid-flow-dense, grid-flow-row, grid-flow-col, grid-flow-row-dense, grid-flow-col-dense"
+  },
+  "网格自动列": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.grid-auto-columns",
+    "body": [
+      "{/* https://tailwindcss.com/docs/grid-auto-columns */}",
+      "<ul className=\"grid auto-cols-max grid-flow-col gap-3 text-center *:bg-sky-500 *:px-10\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03 Abc ... ... ... ... ...</li>",
+      "</ul>"
+    ],
+    "description": "控制隐式创建的网格列, 行的大小 eg: auto-cols-auto, auto-cols-min, auto-cols-max, auto-cols-fr, auto-rows-auto, auto-rows-min, auto-rows-max, auto-rows-fr"
+  },
+  "网格自动行": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.grid-auto-rows",
+    "body": [
+      "{/* https://tailwindcss.com/docs/grid-auto-rows */}",
+      "<ul className=\"grid grid-flow-row auto-rows-min gap-3 text-center *:bg-sky-500 *:px-10\">",
+      "  <li>01</li>",
+      "  <li>",
+      "    <div>02</div>",
+      "    <div>...</div>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "控制隐式创建的网格列, 行的大小 eg: auto-cols-auto, auto-cols-min, auto-cols-max, auto-cols-fr, auto-rows-auto, auto-rows-min, auto-rows-max, auto-rows-fr"
+  },
+  "间距": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.gap",
+    "body": [
+      "{/* https://tailwindcss.com/docs/gap */}",
+      "<ul className=\"flex gap-3  *:bg-sky-500 *:px-10\">",
+      "  <li>gap-*, gap-x-*, gap-y-*, gap-[10px]</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制网格和弹性框项目之间的间距"
+  },
+  "内容调整": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.justify-content",
+    "body": [
+      "{/* https://tailwindcss.com/docs/justify-content */}",
+      "<ul className=\"flex justify-center gap-3 text-center *:bg-sky-500 *:px-10\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制flex和grid项如何沿着容器主轴定位 eg: justify-start, justify-center, justify-end, justify-between, justify-around, justify-evenly, justify-stretch"
+  },
+  "项目调整": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.justify-items",
+    "body": [
+      "{/* https://tailwindcss.com/docs/justify-items */}",
+      "<ul className=\"grid grid-cols-3 justify-items-center gap-3 text-center *:bg-sky-500 *:px-10\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制grid项如何沿其内联轴对齐 eg: justify-items-start, justify-items-end, justify-items-center, justify-items-stretch"
+  },
+  "自我调整": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.justify-self",
+    "body": [
+      "{/* https://tailwindcss.com/docs/justify-self */}",
+      "<ul className=\"grid grid-cols-3 gap-3 text-center *:bg-sky-500 *:px-10\">",
+      "  <li>01</li>",
+      "  <li className=\"justify-self-center\">02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制单个grid项如何沿其内联轴对齐 eg: justify-self-auto, justify-self-start, justify-self-end, justify-self-center, justify-self-stretch"
+  },
+  "内容对齐": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.align-content",
+    "body": [
+      "{/* https://tailwindcss.com/docs/align-content */}",
+      "<ul className=\"grid h-40 grid-cols-3 content-evenly gap-x-3 bg-pink-200 text-center *:bg-sky-500 *:px-10\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "  <li>04</li>",
+      "</ul>"
+    ],
+    "description": "控制行在多行flex和grid容器中的位置 eg: content-normal, content-center, content-start, content-end, content-between, content-around, content-evenly, content-baseline, content-stretch"
+  },
+  "项目对齐": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.align-items",
+    "body": [
+      "{/* https://tailwindcss.com/docs/align-items */}",
+      "<ul className=\"flex items-center gap-3 bg-pink-200 text-center *:flex-1 *:bg-sky-500 *:px-10\">",
+      "  <li>01</li>",
+      "  <li className=\"py-3\">02</li>",
+      "  <li className=\"py-8\">03</li>",
+      "</ul>"
+    ],
+    "description": "控制flex和grid项如何沿着容器的交叉轴定位 eg: items-start, items-end, items-center, items-baseline, items-stretch"
+  },
+  "自我对齐": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.align-self",
+    "body": [
+      "{/* https://tailwindcss.com/docs/align-self */}",
+      "<ul className=\"flex h-24 items-stretch gap-3 bg-pink-200 text-center *:flex-1 *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li className=\"self-center\">02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制单个flex或grid项如何沿着容器的交叉轴定位 eg: self-auto, self-start, self-end, self-center, self-stretch, self-baseline"
+  },
+  "内容放置": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.place-content",
+    "body": [
+      "{/* https://tailwindcss.com/docs/place-content */}",
+      "<ul className=\"grid h-40 grid-cols-[repeat(2,44px)] place-content-evenly bg-pink-200 text-center *:size-[44px] *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "  <li>04</li>",
+      "</ul>"
+    ],
+    "description": "控制内容如何同时调整和对齐"
+  },
+  "项目放置": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.place-items",
+    "body": [
+      "{/* https://tailwindcss.com/docs/place-items */}",
+      "<ul className=\"grid h-[200px] grid-cols-2 gap-3 text-center *:grid *:bg-pink-200\">",
+      "  <li className=\"place-items-start\">",
+      "    <div className=\"bg-sky-500 px-5\">01</div>",
+      "  </li>",
+      "  <li className=\"place-items-end\">",
+      "    <div className=\"bg-sky-500 px-5\">01</div>",
+      "  </li>",
+      "  <li className=\"place-items-center\">",
+      "    <div className=\"bg-sky-500 px-5\">01</div>",
+      "  </li>",
+      "  <li className=\"place-items-stretch\">",
+      "    <div className=\"bg-sky-500 px-5\">02</div>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "控制项目如何同时调整和对齐"
+  },
+  "自我放置": {
+    "scope": "typescriptreact",
+    "prefix": "tw_弹性盒子与网格.place-self",
+    "body": [
+      "{/* https://tailwindcss.com/docs/place-self */}",
+      "<ul className=\"grid h-[200px] grid-cols-2 gap-3 text-center *:grid *:bg-pink-200\">",
+      "  <li>",
+      "    <div className=\"place-self-start bg-sky-500 px-5\">01</div>",
+      "  </li>",
+      "  <li>",
+      "    <div className=\"place-self-end bg-sky-500 px-5\">01</div>",
+      "  </li>",
+      "  <li>",
+      "    <div className=\"place-self-center bg-sky-500 px-5\">01</div>",
+      "  </li>",
+      "  <li>",
+      "    <div className=\"place-self-stretch bg-sky-500 px-5\">02</div>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "控制单个项目如何同时调整和对齐"
+  },
+  // Group => Spacing
+  "填充": {
+    "scope": "typescriptreact",
+    "prefix": "tw_空间.padding",
+    "body": [
+      "{/* https://tailwindcss.com/docs/padding */}",
+      "<ul>",
+      "  <li className=\"p-10\">01</li>",
+      "  <li className=\"px-[10px] py-[20px]\">02</li>",
+      "  <li className=\"pb-12 pl-16 pr-8 pt-5\">03</li>",
+      "  <li className=\"pe-16 ps-8\">04</li>",
+      "</ul>"
+    ],
+    "description": "控制元素填充"
+  },
+  "边距": {
+    "scope": "typescriptreact",
+    "prefix": "tw_空间.margin",
+    "body": [
+      "{/* https://tailwindcss.com/docs/margin */}",
+      "<ul>",
+      "  <li className=\"m-10 -ml-10\">01</li>",
+      "  <li className=\"mx-[10px] my-[20px]\">02</li>",
+      "  <li className=\"mb-12 ml-16 mr-8 mt-5\">03</li>",
+      "  <li className=\"me-16 ms-8\">04</li>",
+      "</ul>"
+    ],
+    "description": "控制元素边距"
+  },
+  "空间": {
+    "scope": "typescriptreact",
+    "prefix": "tw_空间.space",
+    "body": [
+      "{/* https://tailwindcss.com/docs/space */}",
+      "<ul className=\"space-x-4 overflow-x-scroll whitespace-nowrap *:inline-block *:w-2/5 *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>",
+      "<br />",
+      "<ul className=\"space-y-4 *:bg-sky-500\">",
+      "  <li>01</li>",
+      "  <li>02</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制子元素之间空间"
+  },
+  // Group => Sizing
+  "宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_尺寸.width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/width */}",
+      "<span className=\"w-full\">",
+      "  w-0 w-1 w-1/2 w-[10px] w-auto w-full w-px w-screen",
+      "</span>"
+    ],
+    "description": "设置元素宽度"
+  },
+  "最小宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_尺寸.min-width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/min-width */}",
+      "<span className=\"min-w-1\">",
+      "  min-w-1/2 min-w-0 min-w-1 min-w-[10px] min-w-full min-w-px",
+      "</span>"
+    ],
+    "description": "设置元素最小宽度"
+  },
+  "最大宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_尺寸.max-width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/max-width */}",
+      "<span className=\"max-w-[10px]\">",
+      "  max-w-1/2 max-w-0 max-w-1 max-w-[10px] max-w-full max-w-none max-w-px",
+      "</span>"
+    ],
+    "description": "设置元素最大宽度"
+  },
+  "高度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_尺寸.height",
+    "body": [
+      "{/* https://tailwindcss.com/docs/height */}",
+      "<span className=\"h-auto\">",
+      "  h-0 h-1 h-1/2 h-[10px] h-auto h-full h-px h-screen",
+      "</span>"
+    ],
+    "description": "设置元素高度"
+  },
+  "最小高度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_尺寸.min-height",
+    "body": [
+      "{/* https://tailwindcss.com/docs/min-height */}",
+      "<span className=\"min-h-1/2\">",
+      "  min-h-1/2 min-h-0 min-h-1 min-h-[10px] min-h-full min-h-px",
+      "</span>"
+    ],
+    "description": "设置元素最小高度"
+  },
+  "最大高度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_尺寸.max-height",
+    "body": [
+      "{/* https://tailwindcss.com/docs/max-height */}",
+      "<span className=\"max-h-0\">",
+      "  max-h-1/2 max-h-0 max-h-1 max-h-[10px] max-h-full max-h-none max-h-px",
+      "</span>"
+    ],
+    "description": "设置元素最大高度"
+  },
+  "尺寸": {
+    "scope": "typescriptreact",
+    "prefix": "tw_尺寸.size",
+    "body": [
+      "{/* https://tailwindcss.com/docs/size */}",
+      "<span className=\"size-[100px]\">",
+      "  size-0 size-1 size-1/2 size-[10px] size-full size-px size-auto",
+      "</span>"
+    ],
+    "description": "同时设置元素宽度和高度"
+  },
+  // Group => Typography
+  "字体": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.font-family",
+    "body": [
+      "{/* https://tailwindcss.com/docs/font-family */}",
+      "<span className=\"font-sans\">font-serif font-mono</span>"
+    ],
+    "description": "控制元素字体系列"
+  },
+  "字号": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.font-size",
+    "body": [
+      "{/* https://tailwindcss.com/docs/font-size */}",
+      "<p className=\"text-sm\">",
+      "  sm, base, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl, text-[20px],",
+      "  text-sm/10, text-sm/[40px], text-sm/loose",
+      "</p>"
+    ],
+    "description": "控制元素字体大小"
+  },
+  "字体平滑": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.font-smoothing",
+    "body": [
+      "{/* https://tailwindcss.com/docs/font-smoothing */}",
+      "<p className=\"antialiased\">antialiased, subpixel-antialiased (默认值)</p>"
+    ],
+    "description": "控制元素字体平滑"
+  },
+  "字体样式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.font-style",
+    "body": [
+      "{/* https://tailwindcss.com/docs/font-style */}",
+      "<p className=\"italic\">italic, not-italic (默认值)</p>"
+    ],
+    "description": "控制文本样式"
+  },
+  "字体粗细": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.font-weight",
+    "body": [
+      "{/* https://tailwindcss.com/docs/font-weight */}",
+      "<p className=\"font-bold\">",
+      "  font-thin, font-extralight, font-light, font-normal (默认值),",
+      "  font-medium, font-semibold, font-bold, font-extrabold, font-black",
+      "</p>"
+    ],
+    "description": "控制元素字体粗细"
+  },
+  "数字变体": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.font-variant-numeric",
+    "body": [
+      "{/* https://tailwindcss.com/docs/font-variant-numeric */}",
+      "<p className=\"ordinal tabular-nums\">1st, 0123456789</p>",
+      "<p className=\"normal-nums\">1st, 0123456789</p>",
+      "<p className=\"diagonal-fractions\">1/2 3/4 5/6</p>"
+    ],
+    "description": "控制数字变体"
+  },
+  "字母间距": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.letter-spacing",
+    "body": [
+      "{/* https://tailwindcss.com/docs/letter-spacing */}",
+      "<p className=\"tracking-tight\">",
+      "  tracking-tighter, tracking-tight, tracking-normal (默认值),",
+      "  tracking-wide, tracking-wider, tracking-widest",
+      "</p>"
+    ],
+    "description": "控制字母间距"
+  },
+  "多行文本": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.line-clamp",
+    "body": [
+      "{/* https://tailwindcss.com/docs/line-clamp */}",
+      "<p className=\"line-clamp-2\">",
+      "  line-clamp-1, line-clamp-2, line-clamp-3, line-clamp-4, line-clamp-5,",
+      "  line-clamp-6, line-clamp-none (默认值)",
+      "</p>"
+    ],
+    "description": "将文本限制为特定行数"
+  },
+  "行高": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.line-height",
+    "body": [
+      "{/* https://tailwindcss.com/docs/line-height */}",
+      "<p className=\"leading-relaxed\">",
+      "  leading-3, leading-4, leading-5, leading-6, leading-7, leading-8,",
+      "  leading-9, leading-10, leading-none, leading-tight, leading-snug,",
+      "  leading-normal (默认值), leading-relaxed, leading-loose",
+      "</p>"
+    ],
+    "description": "控制元素行距（行高）"
+  },
+  "列表样式图像": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.list-style-image",
+    "body": [
+      "{/* https://tailwindcss.com/docs/list-style-image */}",
+      "<ul className=\"list-image-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=)]\">",
+      "  <li>list-image-*, list-image-none (默认值)</li>",
+      "  <li>02</li>",
+      "</ul>"
+    ],
+    "description": "控制列表项标记图像"
+  },
+  "列表样式位置": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.list-style-position",
+    "body": [
+      "{/* https://tailwindcss.com/docs/list-style-position */}",
+      "<ul className=\"list-inside list-disc\">",
+      "  <li>list-inside, list-outside (默认值)</li>",
+      "  <li>02</li>",
+      "</ul>"
+    ],
+    "description": "控制列表中项目符号/数字位置"
+  },
+  "列表样式类型": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.list-style-type",
+    "body": [
+      "{/* https://tailwindcss.com/docs/list-style-type */}",
+      "<ul className=\"list-inside list-decimal\">",
+      "  <li>list-disc, list-decimal, list-none (默认值)</li>",
+      "  <li>02</li>",
+      "</ul>"
+    ],
+    "description": "控制列表的项目符号/数字样式"
+  },
+  "文本对齐": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-align",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-align */}",
+      "<p className=\"text-center\" dir=\"ltr\">",
+      "  text-left, text-center, text-right, text-justify, text-start, text-end",
+      "</p>"
+    ],
+    "description": "控制文本对齐"
+  },
+  "文本颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-color */}",
+      "<p className=\"text-brand-500/50\">",
+      "  text-inherit, text-current, text-transparent, text-black, text-white,",
+      "  text-sky-50, text-brand, text-[#169fe6], text-[--v-color-primary],",
+      "  text-brand-500/50",
+      "</p>"
+    ],
+    "description": "控制元素文本颜色"
+  },
+  "文本装饰": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-decoration",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-decoration */}",
+      "<a href=\"#\" className=\"no-underline hover:underline\">",
+      "  underline, overline, line-through, no-underline",
+      "</a>"
+    ],
+    "description": "控制文本装饰"
+  },
+  "文本装饰颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-decoration-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-decoration-color */}",
+      "<p className=\"underline decoration-red-600/50\">",
+      "  decoration-inherit, decoration-current, decoration-transparent,",
+      "  decoration-black, decoration-white, decoration-sky-50, decoration-brand,",
+      "  decoration-[#169fe6], decoration-[--v-color-primary],",
+      "  decoration-brand-500/50",
+      "</p>"
+    ],
+    "description": "控制文本装饰颜色"
+  },
+  "文本装饰样式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-decoration-style",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-decoration-style */}",
+      "<p className=\"underline decoration-double\">",
+      "  decoration-solid, decoration-double, decoration-dotted,",
+      "  decoration-dashed, decoration-wavy",
+      "</p>"
+    ],
+    "description": "控制文本装饰风格"
+  },
+  "文本装饰粗细": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-decoration-thickness",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-decoration-thickness */}",
+      "<p className=\"underline decoration-1\">",
+      "decoration-auto, decoration-from-font, decoration-0, decoration-1,",
+      "decoration-2, decoration-4, decoration-8, decoration-[5px]",
+      "</p>"
+    ],
+    "description": "控制文本装饰粗细"
+  },
+  "文本下划线偏移": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-underline-offset",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-underline-offset */}",
+      "<p className=\"underline underline-offset-2\">",
+      "  underline-offset-auto, underline-offset-0, underline-offset-1,",
+      "  underline-offset-2, underline-offset-4, underline-offset-8,",
+      "  underline-offset-[5px]",
+      "</p>"
+    ],
+    "description": "控制文本下划线偏移量"
+  },
+  "文本转换": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-transform",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-transform */}",
+      "<p className=\"capitalize\">",
+      "  uppercase, lowercase, capitalize, normal-case (默认值)",
+      "</p>"
+    ],
+    "description": "控制文本转换"
+  },
+  "文本溢出": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-overflow",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-overflow */}",
+      "<p className=\"truncate\">truncate, text-ellipsis, text-clip (默认值)</p>"
+    ],
+    "description": "控制元素中的文本溢出"
+  },
+  "文本换行": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-wrap",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-wrap */}",
+      "<p className=\"text-nowrap\">",
+      "  text-wrap, text-nowrap, text-balance, text-pretty",
+      "</p>"
+    ],
+    "description": "控制文本在元素内如何换行，注意：text-nowrap safari 下不生效"
+  },
+  "文本缩进": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.text-indent",
+    "body": [
+      "{/* https://tailwindcss.com/docs/text-indent */}",
+      "<p className=\"indent-[2em]\">indent-*, indent-[2em], indent-[50%]</p>"
+    ],
+    "description": "控制块中文本缩进"
+  },
+  "垂直对齐": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.vertical-align",
+    "body": [
+      "{/* https://tailwindcss.com/docs/vertical-align */}",
+      "<p className=\"align-middle\">",
+      "  align-baseline, align-top, align-middle, align-bottom, align-text-top,",
+      "  align-text-bottom, align-sub, align-super, align-[4px]",
+      "</p>"
+    ],
+    "description": "控制内联或表格单元格框的垂直对齐"
+  },
+  "文本空白": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.whitespace",
+    "body": [
+      "{/* https://tailwindcss.com/docs/whitespace */}",
+      "<p className=\"whitespace-pre-line\">",
+      "  whitespace-normal, whitespace-nowrap, whitespace-pre,",
+      "  whitespace-pre-line, whitespace-pre-wrap, whitespace-break-spaces",
+      "</p>"
+    ],
+    "description": "控制元素空白、换行展示"
+  },
+  "文本断词": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.word-break",
+    "body": [
+      "{/* https://tailwindcss.com/docs/word-break */}",
+      "<p className=\"break-all\">",
+      "  break-normal, word-break, break-words, break-all, break-keep",
+      "</p>"
+    ],
+    "description": "控制元素中的单词中断"
+  },
+  "文本连词": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.hyphens",
+    "body": [
+      "{/* https://tailwindcss.com/docs/hyphens */}",
+      "<p className=\"hyphens-auto\" lang=\"de\">",
+      "  hyphens-none, hyphens-manual, hyphens-auto",
+      "</p>"
+    ],
+    "description": "控制单词如何使用连字符"
+  },
+  "伪元素内容": {
+    "scope": "typescriptreact",
+    "prefix": "tw_排版.content",
+    "body": [
+      "{/* https://tailwindcss.com/docs/content */}",
+      "<p className={`after:content-[\"_↗\"]`}>content-* ,content-none</p>"
+    ],
+    "description": "控制前后伪元素内容"
+  },
+  // Group => Backgrounds
+  "背景附件": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-attachment",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-attachment */}",
+      "<div className=\"bg-local\">bg-fixed, bg-local, bg-scroll</div>"
+    ],
+    "description": "控制背景图像滚动时如何表现"
+  },
+  "背景剪辑": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-clip",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-clip */}",
+      "<div className=\"bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text font-bold uppercase text-transparent\">",
+      "  bg-clip-border, bg-clip-padding, bg-clip-content, bg-clip-text",
+      "</div>"
+    ],
+    "description": "控制元素背景边界框"
+  },
+  "背景颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-color */}",
+      "<p className=\"bg-blue-500/50\">",
+      "  bg-inherit, bg-current, bg-transparent, bg-black, bg-white, bg-sky-50,",
+      "  bg-blue-500, bg-[#169fe6], bg-[--v-color-primary], bg-blue-500/50",
+      "</p>"
+    ],
+    "description": "控制元素背景颜色"
+  },
+  "背景起源": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-origin",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-origin */}",
+      "<div className=\"rounded-lg border-8 border-dashed border-white/75 bg-pink-300 bg-[url(//file.40017.cn/tcsk/test/demo.jpg)] bg-[length:100%_100%] bg-no-repeat bg-origin-border p-4 text-white\">",
+      "  bg-origin-border, bg-origin-padding (默认值), bg-origin-content",
+      "</div>"
+    ],
+    "description": "控制元素背景相对于边框、填充和内容的定位方式"
+  },
+  "背景位置": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-position",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-position */}",
+      "<div className=\"bg-[url(//file.40017.cn/tcsk/test/icon.png)] bg-[center_top_20px] bg-no-repeat\">",
+      "  bg-bottom, bg-center, bg-left, bg-left-bottom, bg-left-top, bg-right,",
+      "  bg-right-bottom, bg-right-top, bg-top",
+      "</div>"
+    ],
+    "description": "控制元素背景图像位置"
+  },
+  "背景重复": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-repeat",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-repeat */}",
+      "<div className=\"bg-[url(//file.40017.cn/tcsk/test/icon.png)] bg-repeat-round\">",
+      "  bg-repeat (默认值), bg-no-repeat, bg-repeat-x, bg-repeat-y,",
+      "  bg-repeat-round, bg-repeat-space",
+      "</div>"
+    ],
+    "description": "控制元素背景图像重复"
+  },
+  "背景尺寸": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-size",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-size */}",
+      "<div className=\"bg-[url(//file.40017.cn/tcsk/test/demo.jpg)] bg-cover\">",
+      "  bg-auto (默认值), bg-cover, bg-contain, bg-[length:200px_100px], bg-[length:80%]",
+      "</div>"
+    ],
+    "description": "控制元素背景图像的背景大小"
+  },
+  "背景图片": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.background-image",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-image */}",
+      "<div className=\"rounded-md bg-gradient-to-r from-violet-500 to-fuchsia-500 p-3 text-white\">",
+      "  bg-none (默认值), bg-gradient-to-t, bg-gradient-to-tr, bg-gradient-to-r,",
+      "  bg-gradient-to-br, bg-gradient-to-b, bg-gradient-to-bl,",
+      "  bg-gradient-to-l, bg-gradient-to-tl,",
+      "  bg-[url(//file.40017.cn/tcsk/test/demo.jpg)]",
+      "</div>"
+    ],
+    "description": "控制元素背景图像"
+  },
+  "背景渐变": {
+    "scope": "typescriptreact",
+    "prefix": "tw_背景.gradient-color-stops",
+    "body": [
+      "{/* https://tailwindcss.com/docs/gradient-color-stops */}",
+      "<div className=\"rounded-lg bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-30% to-pink-500 to-90% p-4 text-white\">",
+      "  from-*, via-*, to-*",
+      "</div>"
+    ],
+    "description": "控制背景渐变中颜色停止"
+  },
+  // Group => Borders
+  "圆角半径": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.border-radius",
+    "body": [
+      "{/* https://tailwindcss.com/docs/border-radius */}",
+      "<div className=\"rounded-full bg-sky-200 px-12\">",
+      "  rounded-none, rounded-sm, rounded, rounded-md, rounded-full, rounded-*,",
+      "  rounded-t-*, rounded-tl-*, rounded-s-*, rounded-[12px]",
+      "</div>"
+    ],
+    "description": "控制元素边框半径"
+  },
+  "边框宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.border-width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/border-width */}",
+      "<div className=\"border p-4\">",
+      "  border, border-0, border-*, border-t-*, border-x-*, divide-*,",
+      "  divide-x-*, border-[10px]",
+      "</div>"
+    ],
+    "description": "控制元素边框宽度"
+  },
+  "边框颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.border-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/border-color */}",
+      "<div className=\"border-4 border-sky-500 p-4\">",
+      "  border-inherit, border-current, border-transparent, border-black,",
+      "  border-white, border-sky-50, border-brand, border-[#169fe6],",
+      "  border-[--v-color-primary], border-brand-500/50, border-t-*, border-x-*,",
+      "  ...",
+      "</div>"
+    ],
+    "description": "控制元素边框颜色"
+  },
+  "边框样式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.border-style",
+    "body": [
+      "{/* https://tailwindcss.com/docs/border-style */}",
+      "<div className=\"rounded-md border-4 border-double border-sky-500 px-2\">",
+      "  border-solid, border-dashed, border-dotted, border-double,",
+      "  border-hidden, border-none",
+      "</div>"
+    ],
+    "description": "控制元素边框样式"
+  },
+  "分隔宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.divide-width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/divide-width */}",
+      "<ul className=\"grid grid-flow-col divide-x text-center\">",
+      "  <li>divide-x, divide-x-*</li>",
+      "  <li>divide-y, divide-y-*</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制元素之间边框宽度"
+  },
+  "分隔颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.divide-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/divide-color */}",
+      "<ul className=\"divide-y divide-slate-400/25 text-center\">",
+      "  <li>divide-slate-400/25</li>",
+      "  <li>divide-[#169fe6]</li>",
+      "  <li>divide-white, ...</li>",
+      "</ul>"
+    ],
+    "description": "控制元素之间边框颜色"
+  },
+  "分隔样式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.divide-style",
+    "body": [
+      "{/* https://tailwindcss.com/docs/divide-style */}",
+      "<ul className=\"divide-y divide-dashed\">",
+      "  <li>divide-solid, divide-dashed, divide-dotted</li>",
+      "  <li>divide-double, divide-none</li>",
+      "  <li>03</li>",
+      "</ul>"
+    ],
+    "description": "控制元素之间边框样式"
+  },
+  "轮廓宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.outline-width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/outline-width */}",
+      "<button className=\"rounded-md border border-sky-400 outline outline-4 outline-offset-4 outline-sky-200\">",
+      "  outline-0, outline-1, outline-2, outline-4, outline-8, outline-[5px]",
+      "</button>"
+    ],
+    "description": "控制元素轮廓宽度"
+  },
+  "轮廓颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.outline-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/outline-color */}",
+      "<button className=\"rounded-md border border-sky-400 outline-dashed outline-4 outline-offset-4 outline-sky-200\">",
+      "  outline-inherit, outline-current, outline-transparent, outline-black,",
+      "  outline-white, outline-sky-50, outline-brand, outline-[#169fe6],",
+      "  outline-[--v-color-primary], outline-brand-500/50",
+      "</button>"
+    ],
+    "description": "控制元素轮廓颜色"
+  },
+  "轮廓样式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.outline-style",
+    "body": [
+      "{/* https://tailwindcss.com/docs/outline-style */}",
+      "<button className=\"rounded-md border border-sky-400 outline-dashed outline-4 outline-offset-4 outline-sky-200\">",
+      "  outline-none, outline-offset, outline, outline-dashed, outline-dotted,",
+      "  outline-double",
+      "</button>"
+    ],
+    "description": "控制元素轮廓样式"
+  },
+  "轮廓偏移": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.outline-offset",
+    "body": [
+      "{/* https://tailwindcss.com/docs/outline-offset */}",
+      "<button className=\"rounded-md border border-sky-400 outline-dashed outline-4 outline-offset-4 outline-sky-200\">",
+      "  outline-offset-0, outline-offset-1, outline-offset-2, outline-offset-4,",
+      "  outline-offset-8",
+      "</button>"
+    ],
+    "description": "控制元素轮廓偏移"
+  },
+  "轮廓阴影宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.ring-width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/ring-width */}",
+      "<button className=\"rounded-md border px-3 ring-2 ring-sky-500 ring-offset-2 ring-offset-slate-50\">",
+      "  ring-0, ring-1, ring-2, ring, ring-4, ring-8, ring-inset",
+      "</button>"
+    ],
+    "description": "创建带有框阴影的轮廓"
+  },
+  "轮廓阴影颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.ring-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/ring-color */}",
+      "<button className=\"rounded-md border px-3 ring-2 ring-sky-500 ring-offset-2 ring-offset-slate-50\">",
+      "  ring-inherit, ring-current, ring-transparent, ring-black, ring-white,",
+      "  ring-sky-50, ring-brand, ring-[#169fe6], ring-[--v-color-primary],",
+      "  ring-brand-500/50",
+      "</button>"
+    ],
+    "description": "设置轮廓环颜色"
+  },
+  "轮廓阴影偏移宽度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.ring-offset-width",
+    "body": [
+      "{/* https://tailwindcss.com/docs/ring-offset-width */}",
+      "<button className=\"rounded-md border px-3 ring-2 ring-sky-500 ring-offset-2 ring-offset-slate-50\">",
+      "  ring-offset-0, ring-offset-1, ring-offset-2, ring-offset-4,",
+      "  ring-offset-8",
+      "</button>"
+    ],
+    "description": "模拟添加轮廓环时偏移"
+  },
+  "轮廓阴影偏移颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_边框.ring-offset-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/ring-offset-color */}",
+      "<button className=\"rounded-md border px-3 ring-2 ring-sky-500 ring-offset-2 ring-offset-slate-50\">",
+      "  ring-offset-inherit, ring-offset-current, ring-offset-transparent,",
+      "  ring-offset-black, ring-offset-white, ring-offset-sky-50,",
+      "  ring-offset-brand, ring-offset-[#169fe6],",
+      "  ring-offset-[--v-color-primary], ring-offset-brand-500/50",
+      "</button>"
+    ],
+    "description": "设置廓环偏移颜色"
+  },
+  // Group => Effects
+  "盒子阴影": {
+    "scope": "typescriptreact",
+    "prefix": "tw_特效.box-shadow",
+    "body": [
+      "{/* https://tailwindcss.com/docs/box-shadow */}",
+      "<div className=\"rounded border p-4 shadow-2xl\">",
+      "  shadow-sm, shadow, shadow-md, shadow-lg, shadow-xl, shadow-2xl,",
+      "  shadow-inner, shadow-none, shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]",
+      "</div>"
+    ],
+    "description": "控制元素的框阴影"
+  },
+  "盒子阴影颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_特效.box-shadow-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/box-shadow-color */}",
+      "<div className=\"rounded border p-4 shadow-2xl shadow-pink-500\">",
+      "  shadow-inherit, shadow-current, shadow-transparent, shadow-black,",
+      "  shadow-white, shadow-sky-50, shadow-brand, shadow-[#169fe6],",
+      "  shadow-[--v-color-primary], shadow-brand-500/50",
+      "</div>"
+    ],
+    "description": "控制盒子阴影颜色"
+  },
+  "不透明度": {
+    "scope": "typescriptreact",
+    "prefix": "tw_特效.opacity",
+    "body": [
+      "{/* https://tailwindcss.com/docs/opacity */}",
+      "<div className=\"opacity-50\">",
+      "  opacity-0, opacity-5, opacity-10, opacity-15, ..., opacity-100, opacity-[.67]",
+      "</div>"
+    ],
+    "description": "控制元素不透明度"
+  },
+  "混合模式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_特效.mix-blend-mode",
+    "body": [
+      "{/* https://tailwindcss.com/docs/mix-blend-mode */}",
+      "<div className=\"flex justify-center -space-x-14 *:size-32 *:rounded-full\">",
+      "  <div className=\"bg-blue-400 mix-blend-multiply\"></div>",
+      "  <div className=\"bg-pink-400 mix-blend-multiply\"></div>",
+      "</div>"
+    ],
+    "description": "控制元素如何与背景混合"
+  },
+  "背景混合模式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_特效.background-blend-mode",
+    "body": [
+      "{/* https://tailwindcss.com/docs/background-blend-mode */}",
+      "<div className=\"rounded-md bg-sky-200 bg-[url(//file.40017.cn/tcsk/test/demo.jpg)] bg-cover p-3 text-white bg-blend-multiply\">",
+      "  bg-blend-hard-light, bg-blend-soft-light, bg-blend-difference,",
+      "  bg-blend-exclusion, bg-blend-hue, bg-blend-saturation, bg-blend-color,",
+      "  bg-blend-luminosity",
+      "</div>"
+    ],
+    "description": "控制元素的背景图像如何与其背景颜色混合"
+  },
+  // Group => Filters
+  "元素滤镜": {
+    "scope": "typescriptreact",
+    "prefix": "tw_滤镜.blur...",
+    "body": [
+      "{/* https://tailwindcss.com/docs/blur */}",
+      "<div className=\"blur\">",
+      "  <img",
+      "    className=\"w-full\"",
+      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    alt=\"\"",
+      "  />",
+      "  <p>",
+      "    blur-*, brightness-*, contrast-*, grayscale, hue-rotate-*, invert,",
+      "    saturate-*, sepia",
+      "  </p>",
+      "</div>"
+    ],
+    "description": "将模糊、亮度、对比、灰度、色调旋转、反转、饱和度、棕褐色 过滤器应用于元素"
+  },
+  "阴影滤镜": {
+    "scope": "typescriptreact",
+    "prefix": "tw_滤镜.drop-shadow",
+    "body": [
+      "{/* https://tailwindcss.com/docs/drop-shadow */}",
+      "<svg className=\"size-28 drop-shadow-md\" viewBox=\"0 0 84 84\">",
+      "  <path",
+      "    d=\"M22.0992 77L2.19922 42.5L22.0992 8H61.8992L81.7992 42.5L61.8992 77H22.0992Z\"",
+      "    fill=\"#fff\"",
+      "  />",
+      "</svg>"
+    ],
+    "description": "将阴影过滤器应用于元素"
+  },
+  "背景滤镜": {
+    "scope": "typescriptreact",
+    "prefix": "tw_滤镜.backdrop-blur...",
+    "body": [
+      "{/* https://tailwindcss.com/docs/backdrop-blur */}",
+      "<div className=\"relative\">",
+      "  <p className=\"absolute inset-10 bg-white/30 p-3 backdrop-blur\">",
+      "    backdrop-blur-*, backdrop-brightness-*, backdrop-contrast-*,",
+      "    backdrop-grayscale, backdrop-hue-rotate-*, backdrop-invert,",
+      "    backdrop-opacity-*, backdrop-saturate-*, backdrop-sepia",
+      "  </p>",
+      "  <img",
+      "    className=\"w-full\"",
+      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    alt=\"\"",
+      "  />",
+      "</div>"
+    ],
+    "description": "将背景模糊、背景亮度、背景对比、背景灰度、背景色调旋转、背景反转、背景不透明度、背景饱和度、背景棕褐色 过滤器应用于元素"
+  },
+  // Group => Tables
+  "表格": {
+    "scope": "typescriptreact",
+    "prefix": "tw_表格.table",
+    "body": [
+      "{/* https://tailwindcss.com/docs/border-collapse */}",
+      "<table className=\"w-full border-separate border-spacing-1 border text-left\">",
+      "  <caption className=\"caption-bottom text-sm\">Tables Example</caption>",
+      "  <tr className=\"*:whitespace-nowrap *:border *:px-1\">",
+      "    <td>边界崩塌</td>",
+      "    <td>border-separate</td>",
+      "    <td>border-collapse (默认)</td>",
+      "  </tr>",
+      "  <tr className=\"*:whitespace-nowrap *:border *:px-1\">",
+      "    <td>边框间距</td>",
+      "    <td>border-spacing-*</td>",
+      "    <td>border-spacing-x-*</td>",
+      "  </tr>",
+      "  <tr className=\"*:whitespace-nowrap *:border *:px-1\">",
+      "    <td>表格布局</td>",
+      "    <td>table-fixed</td>",
+      "    <td>table-auto (默认)</td>",
+      "  </tr>",
+      "  <tr className=\"*:whitespace-nowrap *:border *:px-1\">",
+      "    <td>标题位置</td>",
+      "    <td>caption-bottom</td>",
+      "    <td>caption-top (默认)</td>",
+      "  </tr>",
+      "</table>"
+    ],
+    "description": "控制表格边框是否折叠或分离"
+  },
+  // Group => Transitions
+  "过渡、动画": {
+    "scope": "typescriptreact",
+    "prefix": "tw_动画.transition.animation",
+    "body": [
+      "{/* https://tailwindcss.com/docs/transition-property */}",
+      "<div className=\"rounded bg-sky-500 p-3 text-white transition-all delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-90 hover:bg-pink-500\">",
+      "  过渡属性: transition-* | 过渡持续时间: duration-* | 转换定时功能:",
+      "  ease-linear, ... | 过渡延迟: delay-* | 动画片: animate-bounce, ...",
+      "</div>"
+    ],
+    "description": "CSS动画、动画过渡"
+  },
+  // Group => Transforms
+  "变换": {
+    "scope": "typescriptreact",
+    "prefix": "tw_动画.transform",
+    "body": [
+      "{/* https://tailwindcss.com/docs/scale */}",
+      "<div className=\"divide-y rounded bg-sky-500 p-3 text-white transition-all delay-150 duration-300 ease-in-out hover:-translate-y-2 hover:scale-90 hover:bg-pink-500\">",
+      "  <p>缩放: scale-*, scale-x-*, scale-y-*, -scale-*, scale-[1.2]</p>",
+      "  <p>旋转: rotate-*, -rotate-*, rotate-[15deg]</p>",
+      "  <p>移动: translate-x-*, translate-y-*, translate-y-[1rem]</p>",
+      "  <p>倾斜: skew-x-*, skew-y-*, -skew-x-*, skew-y-[15deg]</p>",
+      "  <p>变换原点: skew-x-*, skew-y-*, -skew-x-*, skew-y-[15deg]</p>",
+      "  <p>删除变换: origin-center, origin-*, origin-[33%_75%]</p>",
+      "  <p>硬件加速: transform-gpu, transform-cpu</p>",
+      "</div>"
+    ],
+    "description": "CSS变换"
+  },
+  // Group => Interactivity
+  "强调色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.accent-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/accent-color */}",
+      "<label className=\"flex align-middle\">",
+      "  <input type=\"checkbox\" className=\"accent-pink-500\" />",
+      "  <span>&nbsp;Example accent-pink-500</span>",
+      "</label>"
+    ],
+    "description": "控制表单控件强调色"
+  },
+  "外貌": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.appearance",
+    "body": [
+      "{/* https://tailwindcss.com/docs/appearance */}",
+      "<select className=\"appearance-none\">",
+      "  <option>appearance-none</option>",
+      "  <option>appearance-auto</option>",
+      "</select>"
+    ],
+    "description": "抑制本机表单控制样式"
+  },
+  "光标样式": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.cursor",
+    "body": [
+      "{/* https://tailwindcss.com/docs/cursor */}",
+      "<button className=\"cursor-not-allowed\">cursor-not-allowed</button>"
+    ],
+    "description": "控制鼠标悬停在元素上时的光标样式"
+  },
+  "光标颜色": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.caret-color",
+    "body": [
+      "{/* https://tailwindcss.com/docs/caret-color */}",
+      "<textarea className=\"w-full rounded-md border-2 p-2 caret-pink-500\" />"
+    ],
+    "description": "控制文本输入光标颜色"
+  },
+  "光标事件": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.pointer-events",
+    "body": [
+      "{/* https://tailwindcss.com/docs/pointer-events */}",
+      "<div className=\"relative overflow-hidden\">",
+      "  <span className=\"pointer-events-auto absolute h-full w-20 bg-[url(//file.40017.cn/tcsk/test/icon.png)] bg-[length:80%] bg-center bg-no-repeat\" />",
+      "  <input className=\"h-20 w-full rounded-md border pl-20\" type=\"text\" />",
+      "</div>"
+    ],
+    "description": "控制元素是否响应指针"
+  },
+  "尺寸调整": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.resize",
+    "body": [
+      "{/* https://tailwindcss.com/docs/resize */}",
+      "<textarea",
+      "  className=\"w-full resize-none rounded-md border px-2\"",
+      "  defaultValue=\"resize-none, resize-y, resize-x, resize\"",
+      "/>"
+    ],
+    "description": "控制如何调整元素大小"
+  },
+  "滚动行为": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.scroll-behavior",
+    "body": [
+      "{/* https://tailwindcss.com/docs/scroll-behavior */}",
+      "<html className=\"scroll-smooth\">scroll-smooth, scroll-auto</html>"
+    ],
+    "description": "控制元素滚动行为"
+  },
+  "滚动边距": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.scroll-margin",
+    "body": [
+      "{/* https://tailwindcss.com/docs/scroll-margin */}",
+      "<div className=\"snap-x space-x-3 overflow-x-scroll whitespace-nowrap bg-pink-200 *:inline-block *:snap-start *:scroll-ml-3\">",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "</div>"
+    ],
+    "description": "控制捕捉容器中项目周围滚动偏移"
+  },
+  "滚动填充": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.scroll-padding",
+    "body": [
+      "{/* https://tailwindcss.com/docs/scroll-padding */}",
+      "<div className=\"snap-x scroll-pl-3 space-x-3 overflow-x-scroll whitespace-nowrap bg-purple-200 *:inline-block *:snap-start\">",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "</div>"
+    ],
+    "description": "控制捕捉容器内元素滚动偏移"
+  },
+  "滚动对齐": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.scroll-snap-align",
+    "body": [
+      "{/* https://tailwindcss.com/docs/scroll-snap-align */}",
+      "<div className=\"snap-x space-x-3 overflow-x-scroll whitespace-nowrap bg-purple-200 *:inline-block *:snap-center\">",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "</div>"
+    ],
+    "description": "控制元素的滚动捕捉对齐"
+  },
+  "触摸行为": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.touch-action",
+    "body": [
+      "{/* https://tailwindcss.com/docs/touch-action */}",
+      "<div className=\"touch-none overflow-auto\">touch-*</div>"
+    ],
+    "description": "控制元素如何在触摸屏上滚动和缩放"
+  },
+  "用户选择": {
+    "scope": "typescriptreact",
+    "prefix": "tw_交互性.user-select",
+    "body": [
+      "{/* https://tailwindcss.com/docs/user-select */}",
+      "<div className=\"select-all\">",
+      "  select-none, select-text, select-all, select-auto",
+      "</div>"
+    ],
+    "description": "控制用户是否可以选择元素中的文本"
+  },
+  // Group => SVG
+  "SVG": {
+    "scope": "typescriptreact",
+    "prefix": "tw_SVG",
+    "body": [
+      "{/* https://tailwindcss.com/docs/fill */}",
+      "<svg className=\"fill-cyan-500 stroke-2 hover:stroke-cyan-700\"></svg>"
+    ],
+    "description": "设置 SVG 元素填充样式"
+  },
+  // Group => Accessibility
+  "屏幕阅读器": {
+    "scope": "typescriptreact",
+    "prefix": "tw_无障碍.screen-readers",
+    "body": [
+      "{/* https://tailwindcss.com/docs/screen-readers */}",
+      "<div className=\"sr-only\">sr-only, not-sr-only</div>"
+    ],
+    "description": "提高屏幕阅读器可访问性"
+  },
+  "强制色彩调整": {
+    "scope": "typescriptreact",
+    "prefix": "tw_无障碍.forced-color-adjust",
+    "body": [
+      "{/* https://tailwindcss.com/docs/forced-color-adjust */}",
+      "<div className=\"forced-color-adjust-none\">",
+      "  forced-color-adjust-auto, forced-color-adjust-none",
+      "</div>"
+    ],
+    "description": "选择加入或退出强制颜色"
+  }
+}

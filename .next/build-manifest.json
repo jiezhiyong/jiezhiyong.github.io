@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/_A4a-T80MO4IvpYOn-tjT/_buildManifest.js",
-    "static/_A4a-T80MO4IvpYOn-tjT/_ssgManifest.js"
+    "static/mARt0Ybo0Y0dgV6dEh8EX/_buildManifest.js",
+    "static/mARt0Ybo0Y0dgV6dEh8EX/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -16,19 +16,20 @@
       "static/chunks/main-4b4f5999e8f188f6.js",
       "static/css/93ad2b9badc7a8f8.css",
       "static/chunks/589-02a10a2cf98f45c3.js",
-      "static/chunks/pages/index-d919eb53024fb1e5.js"
+      "static/chunks/pages/index-ca96d942b9a34969.js"
     ],
     "/_app": [
       "static/chunks/webpack-68fe198bdf03eb5f.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4b4f5999e8f188f6.js",
-      "static/chunks/pages/_app-ca73eab6798d1abf.js"
+      "static/css/fb39411274c8cd24.css",
+      "static/chunks/pages/_app-74242e090a2b7252.js"
     ],
     "/_error": [
       "static/chunks/webpack-68fe198bdf03eb5f.js",
       "static/chunks/framework-8d78bf989db74c8f.js",
       "static/chunks/main-4b4f5999e8f188f6.js",
-      "static/chunks/pages/_error-8e212447b4645e4a.js"
+      "static/chunks/pages/_error-bc0a07a641e12c3e.js"
     ],
     "/about": [
       "static/chunks/webpack-68fe198bdf03eb5f.js",
@@ -36,7 +37,7 @@
       "static/chunks/main-4b4f5999e8f188f6.js",
       "static/css/93ad2b9badc7a8f8.css",
       "static/chunks/589-02a10a2cf98f45c3.js",
-      "static/chunks/pages/about-e60d30dfafbb7598.js"
+      "static/chunks/pages/about-35b69edde3382256.js"
     ],
     "/advanced": [
       "static/chunks/webpack-68fe198bdf03eb5f.js",
@@ -44,7 +45,7 @@
       "static/chunks/main-4b4f5999e8f188f6.js",
       "static/css/93ad2b9badc7a8f8.css",
       "static/chunks/589-02a10a2cf98f45c3.js",
-      "static/chunks/pages/advanced-9200a143817157f9.js"
+      "static/chunks/pages/advanced-bcff387efedec23a.js"
     ],
     "/advanced/satori": [
       "static/chunks/webpack-68fe198bdf03eb5f.js",
@@ -52,7 +53,7 @@
       "static/chunks/main-4b4f5999e8f188f6.js",
       "static/css/93ad2b9badc7a8f8.css",
       "static/chunks/589-02a10a2cf98f45c3.js",
-      "static/chunks/pages/advanced/satori-58db042197e2bbf4.js"
+      "static/chunks/pages/advanced/satori-2138a89c10d1914a.js"
     ],
     "/another": [
       "static/chunks/webpack-68fe198bdf03eb5f.js",
@@ -61,7 +62,7 @@
       "static/css/93ad2b9badc7a8f8.css",
       "static/chunks/589-02a10a2cf98f45c3.js",
       "static/css/cd3af4f81ba59161.css",
-      "static/chunks/pages/another-b6b3c912a71fab0b.js"
+      "static/chunks/pages/another-0f3f8be31058e9ab.js"
     ]
   },
   "ampFirstPages": []
