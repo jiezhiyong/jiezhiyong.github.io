@@ -4,9 +4,9 @@
   "description": "Nextra docs for personal",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "export": "next export && rm -rf docs/* && cp -r out/* docs/ && touch docs/.nojekyll"
+    "build": "next build",
+    "deploy": "next build && rm -rf docs/* && cp -r out/* docs/ && touch docs/.nojekyll"
   },
   "author": "jiezhiyong",
   "homepage": "https://jiezhiyong.github.io",
