@@ -1,0 +1,23 @@
+.screenshot-container {
+  position: relative;
+  cursor: zoom-in;
+}
+
+.doc-frontend-preview-block {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doc-frontend-preview-block .preview-image {
+  width: 80%;
+  height: 95%;
+  object-fit: contain;
+}

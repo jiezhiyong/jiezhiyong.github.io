@@ -1,11 +1,36 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+import { Section } from "@/components/section";
+import { Hero } from "@/components/hero";
+import { FileTree } from "nextra/components";
+import { Tabs, Tab, Card } from "nextra-theme-docs";
+import { Wrapper } from "@/components/wrapper";
 
-## What is Nextra?
+## 知识库介绍
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+>
 
-## Documentation
+<Section
+  title=""
+  description={[
+    "👋 致力于维护一个共享的前端知识库，分享相关的知识、解决方案、以及踩过的坑 ...",
+  ]}
+/>
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+>
+
+<Hero />
+
+## 快速开始
+
+<div className="mt-4">
+  <Card
+    title={<span className="inline-flex items-center">👋 流程规范、建议</span>}
+    href="/base-specifications"
+  />
+</div>
+
+<div className="mt-4">
+  <Card
+    title={<span className="inline-flex items-center">👋 参与贡献</span>}
+    href="/community-guides/contribute"
+  />
+</div>

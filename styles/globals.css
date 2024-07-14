@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --abc: rgba(0, 0, 0, 1);
+}
+
+.dark {
+  --abc: rgba(0, 0, 0, 0.5);
+}

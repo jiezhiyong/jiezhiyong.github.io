@@ -1,0 +1,100 @@
+# 代码提交规范
+
+强烈建议大家统一使用 `commitizen` 来规范代码提交格式。并尽可能的在提交信息中带上需求号，以方便日后溯源。
+
+## 约束 git commit
+
+全局下载 commitizen
+
+```bash
+$ npm install commitizen -g
+```
+
+提交代码时使用以下命令，按步骤输入提交信息
+
+```bash
+git add .
+git cz
+```
+
+## 基本格式
+
+```bash
+{type}({scope}): {description},
+
+{body},
+
+{footer}
+```
+
+## 格式说明
+
+```bash
+type:        用于说明提交的类别（feat、fix、chore、docs、perf、refactor、style、test、revert、ci）
+scope:       需求ID、或缺陷ID、影响范围，以提供额外的上下文信息
+description: 简短描述
+body:        本次提交的详细描述，可以分成多行
+footer:      不兼容变动描述（BREAKING CHANGE: 1px线条自动转换为rem）、关闭Issue（Closes #123456, #456789）
+```
+
+## 提交示例
+
+新特性、新功能
+
+```bash
+feat(415094): 个人中心菜单新增点击埋点
+```
+
+缺陷修复
+
+```bash
+fix(415094): 邮箱正则表达式校验规则修复
+```
+
+日常杂务、构建过程或辅助工具的变动、无生产代码更改，如：编译、打包代码
+
+```bash
+chore(mine): 构建个人中心模块
+```
+
+文档修改
+
+```bash
+docs(home): 在README.md中新增首页流程交互文档
+```
+
+优化相关，如：提升性能、体验、UI 样式优化等
+
+```bash
+perf(home): Button增加防抖逻辑
+```
+
+代码重构
+
+```bash
+refactor(home): 重构首页Tab中的下拉刷新功能
+```
+
+代码格式修改，如：修改空白字符，格式缩进，补全缺失的分号等，没有改变代码逻辑（注意不是 CSS 样式修改）
+
+```bash
+style(home): 保存时自动格式化导致的import顺序变更
+```
+
+测试用例修改
+
+```bash
+test(Button): 新增异步调用时的测试用例
+```
+
+回滚到上一个版本
+
+```bash
+revert(release): 将release重置到2024.10.01
+```
+
+自动化流程配置修改、与 CI（持续集成服务）有关的改动
+
+```bash
+ci(.yarnrc.yml): 指定 @dimjs/* 使用淘宝镜像源
+```

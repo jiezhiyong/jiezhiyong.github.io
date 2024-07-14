@@ -33,7 +33,7 @@
     "body": [
       "{/* https://tailwindcss.com/docs/aspect-ratio */}",
       "<div className=\"aspect-auto\">",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
       "  <span>aspect-auto, aspect-square, aspect-video, aspect-[4/3]</span>",
       "</div>"
     ],
@@ -45,7 +45,7 @@
     "body": [
       "{/* https://tailwindcss.com/docs/container */}",
       "<div className=\"container mx-auto bg-stone-50 p-[30px]\">",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
       "</div>"
     ],
     "description": "将元素的宽度固定至当前断点"
@@ -56,9 +56,9 @@
     "body": [
       "{/* https://tailwindcss.com/docs/tailwindcss */}",
       "<div className=\"columns-2 gap-[10px] space-y-[10px] lg:columns-3\">",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
       "</div>"
     ],
     "description": "控制元素内列数"
@@ -162,12 +162,12 @@
       "<article>",
       "  <img",
       "    className=\"float-left mr-[20px] w-[180px] group-hover:float-right group-hover:ml-[20px]\"",
-      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\"",
       "    alt=\"\"",
       "  />",
       "  <img",
       "    className=\"float-right ml-[20px] w-[180px] group-hover:float-right group-hover:ml-[20px]\"",
-      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\"",
       "    alt=\"\"",
       "  />",
       "  <p className=\"clear-both text-justify\">",
@@ -193,7 +193,7 @@
       "<div className=\"bg-stone-100 p-[20px] text-center\">",
       "  <img",
       "    className=\"h-[150px] w-full object-cover\" // more: object-contain, object-fill, object-scale-down, object-none",
-      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\"",
       "    alt=\"\"",
       "  />",
       "</div>"
@@ -208,7 +208,7 @@
       "<div className=\"bg-stone-100 p-[20px] text-center\">",
       "  <img",
       "    className=\"h-[150px] w-full object-none object-left-top\"",
-      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\"",
       "    alt=\"\"",
       "  />",
       "</div>"
@@ -235,7 +235,7 @@
     "body": [
       "{/* https://tailwindcss.com/docs/overscroll */}",
       "<div className=\"h-[150px] overflow-auto overscroll-contain\">",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
       "</div>"
     ],
     "description": "控制浏览器在到达滚动区域边界时的行为 eg: overflow-auto, overflow-hidden, overflow-clip, overflow-visible, overflow-scroll, overflow-x-auto, overflow-y-auto, overflow-x-hidden, overflow-y-hidden, overflow-x-clip, overflow-y-clip, overflow-x-visible, overflow-y-visible, overflow-x-scroll"
@@ -1171,7 +1171,7 @@
     "prefix": "tw_背景.background-origin",
     "body": [
       "{/* https://tailwindcss.com/docs/background-origin */}",
-      "<div className=\"rounded-lg border-8 border-dashed border-white/75 bg-pink-300 bg-[url(//file.40017.cn/tcsk/test/demo.jpg)] bg-[length:100%_100%] bg-no-repeat bg-origin-border p-4 text-white\">",
+      "<div className=\"rounded-lg border-8 border-dashed border-white/75 bg-pink-300 bg-[url(https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png)] bg-[length:100%_100%] bg-no-repeat bg-origin-border p-4 text-white\">",
       "  bg-origin-border, bg-origin-padding (默认值), bg-origin-content",
       "</div>"
     ],
@@ -1182,7 +1182,7 @@
     "prefix": "tw_背景.background-position",
     "body": [
       "{/* https://tailwindcss.com/docs/background-position */}",
-      "<div className=\"bg-[url(//file.40017.cn/tcsk/test/icon.png)] bg-[center_top_20px] bg-no-repeat\">",
+      "<div className=\"bg-[url(https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png)] bg-[center_top_20px] bg-no-repeat\">",
       "  bg-bottom, bg-center, bg-left, bg-left-bottom, bg-left-top, bg-right,",
       "  bg-right-bottom, bg-right-top, bg-top",
       "</div>"
@@ -1194,7 +1194,7 @@
     "prefix": "tw_背景.background-repeat",
     "body": [
       "{/* https://tailwindcss.com/docs/background-repeat */}",
-      "<div className=\"bg-[url(//file.40017.cn/tcsk/test/icon.png)] bg-repeat-round\">",
+      "<div className=\"bg-[url(https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png)] bg-repeat-round\">",
       "  bg-repeat (默认值), bg-no-repeat, bg-repeat-x, bg-repeat-y,",
       "  bg-repeat-round, bg-repeat-space",
       "</div>"
@@ -1206,7 +1206,7 @@
     "prefix": "tw_背景.background-size",
     "body": [
       "{/* https://tailwindcss.com/docs/background-size */}",
-      "<div className=\"bg-[url(//file.40017.cn/tcsk/test/demo.jpg)] bg-cover\">",
+      "<div className=\"bg-[url(https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png)] bg-cover\">",
       "  bg-auto (默认值), bg-cover, bg-contain, bg-[length:200px_100px], bg-[length:80%]",
       "</div>"
     ],
@@ -1221,7 +1221,7 @@
       "  bg-none (默认值), bg-gradient-to-t, bg-gradient-to-tr, bg-gradient-to-r,",
       "  bg-gradient-to-br, bg-gradient-to-b, bg-gradient-to-bl,",
       "  bg-gradient-to-l, bg-gradient-to-tl,",
-      "  bg-[url(//file.40017.cn/tcsk/test/demo.jpg)]",
+      "  bg-[url(https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png)]",
       "</div>"
     ],
     "description": "控制元素背景图像"
@@ -1479,7 +1479,7 @@
     "prefix": "tw_特效.background-blend-mode",
     "body": [
       "{/* https://tailwindcss.com/docs/background-blend-mode */}",
-      "<div className=\"rounded-md bg-sky-200 bg-[url(//file.40017.cn/tcsk/test/demo.jpg)] bg-cover p-3 text-white bg-blend-multiply\">",
+      "<div className=\"rounded-md bg-sky-200 bg-[url(https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png)] bg-cover p-3 text-white bg-blend-multiply\">",
       "  bg-blend-hard-light, bg-blend-soft-light, bg-blend-difference,",
       "  bg-blend-exclusion, bg-blend-hue, bg-blend-saturation, bg-blend-color,",
       "  bg-blend-luminosity",
@@ -1496,7 +1496,7 @@
       "<div className=\"blur\">",
       "  <img",
       "    className=\"w-full\"",
-      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\"",
       "    alt=\"\"",
       "  />",
       "  <p>",
@@ -1534,7 +1534,7 @@
       "  </p>",
       "  <img",
       "    className=\"w-full\"",
-      "    src=\"//file.40017.cn/tcsk/test/demo.jpg\"",
+      "    src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\"",
       "    alt=\"\"",
       "  />",
       "</div>"
@@ -1653,7 +1653,7 @@
     "body": [
       "{/* https://tailwindcss.com/docs/pointer-events */}",
       "<div className=\"relative overflow-hidden\">",
-      "  <span className=\"pointer-events-auto absolute h-full w-20 bg-[url(//file.40017.cn/tcsk/test/icon.png)] bg-[length:80%] bg-center bg-no-repeat\" />",
+      "  <span className=\"pointer-events-auto absolute h-full w-20 bg-[url(https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png)] bg-[length:80%] bg-center bg-no-repeat\" />",
       "  <input className=\"h-20 w-full rounded-md border pl-20\" type=\"text\" />",
       "</div>"
     ],
@@ -1686,9 +1686,9 @@
     "body": [
       "{/* https://tailwindcss.com/docs/scroll-margin */}",
       "<div className=\"snap-x space-x-3 overflow-x-scroll whitespace-nowrap bg-pink-200 *:inline-block *:snap-start *:scroll-ml-3\">",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
       "</div>"
     ],
     "description": "控制捕捉容器中项目周围滚动偏移"
@@ -1699,9 +1699,9 @@
     "body": [
       "{/* https://tailwindcss.com/docs/scroll-padding */}",
       "<div className=\"snap-x scroll-pl-3 space-x-3 overflow-x-scroll whitespace-nowrap bg-purple-200 *:inline-block *:snap-start\">",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
       "</div>"
     ],
     "description": "控制捕捉容器内元素滚动偏移"
@@ -1712,9 +1712,9 @@
     "body": [
       "{/* https://tailwindcss.com/docs/scroll-snap-align */}",
       "<div className=\"snap-x space-x-3 overflow-x-scroll whitespace-nowrap bg-purple-200 *:inline-block *:snap-center\">",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
-      "  <img src=\"//file.40017.cn/tcsk/test/demo.jpg\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
+      "  <img src=\"https://sentry.io/static/arcade-standby-bg-66d066a75b40f1a9652ed0e5ab6dacd6.png\" alt=\"\" />",
       "</div>"
     ],
     "description": "控制元素的滚动捕捉对齐"

@@ -1,0 +1,54 @@
+# 代码风格
+
+请大家遵循一致的代码风格，从而在日常协作中能更加轻松、自如。
+
+## Prettier + Eslint
+
+项目中使用 prettier 来格式化代码，使用 eslint 来检查代码。
+
+- eslint
+
+```ts filename=".eslintrc.js"
+module.exports = {
+  root: true,
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: "tsconfig.json",
+  },
+  ignorePatterns: [],
+  extends: [],
+  rules: {
+    // optional overrides per project
+  },
+  overrides: [
+    {
+      files: ["**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+      rules: {
+        "@typescript-eslint/naming-convention": "off",
+        "sonarjs/no-duplicate-string": "off",
+      },
+    },
+  ],
+};
+```
+
+- prettier
+
+```ts filename="prettierrc.config.cjs"
+/**
+ * @type {import('prettier').Config}
+ */
+const config = {
+  overrides: [
+    {
+      files: "*.md",
+      options: {
+        singleQuote: false,
+        quoteProps: "preserve",
+      },
+    },
+  ],
+};
+
+module.exports = config;
+```
