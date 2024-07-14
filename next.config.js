@@ -6,12 +6,5 @@ const withNextra = require("nextra")({
 module.exports = withNextra({
   output: 'export',
   trailingSlash: true,
-  assetPrefix: './',
   images: { unoptimized: true }, // 禁用图片优化以支持静态导出
-  // exportPathMap: async function (defaultPathMap) {
-  //   return {
-  //     '/': { page: '/' },
-  //     '/base-specifications/commit': { page: '/base-specifications/commit' },
-  //   };
-  // },
 });
