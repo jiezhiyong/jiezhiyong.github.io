@@ -40,7 +40,7 @@ const config: DocsThemeConfig = {
     "https://github.com/jiezhiyong/jiezhiyong.github.io/tree/main/docs/",
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – Doc",
+      titleTemplate: "%s – Docs",
     };
   },
   feedback: {
