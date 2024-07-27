@@ -1,0 +1,12 @@
+import { Callout } from "@/components/callout";
+
+## loose mode
+
+JS 中对 Children 使用 array-spread（数组展开运算符） 时，如：[...children]，预期应该得到 [div, div, div]，实际得到：[HTMLCollection(3)]
+
+>
+
+<Callout type="default" title="问题 & 解决方案">
+  使用 loose mode（松散模式），normal mode 转换而来的 ES5 代码更加符合
+  ECMAScript 6 的语义，loose mode 转换而来的代码更加简单，优点在于兼容旧引擎。
+</Callout>
