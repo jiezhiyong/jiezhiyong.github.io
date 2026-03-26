@@ -1,4 +1,4 @@
-{
+export default {
   "index": "简介",
   "base-specifications": "流程规范、建议",
   "github": "开源项目推荐",

@@ -1,4 +1,4 @@
-{
+export default {
   "commit": "代码提交",
   "packages": "包管理工具",
   "dev": "开发规范",
