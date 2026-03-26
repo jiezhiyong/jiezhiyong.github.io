@@ -37,48 +37,8 @@ const config: DocsThemeConfig = {
     link: "https://github.com/jiezhiyong/jiezhiyong.github.io",
   },
   docsRepositoryBase:
-    "https://github.com/jiezhiyong/jiezhiyong.github.io/tree/main/docs/",
-  useNextSeoProps() {
-    return {
-      titleTemplate: "%s – Docs",
-    };
-  },
-  feedback: {
-    content: Feedback,
-    useLink: () =>
-      "https://github.com/jiezhiyong/jiezhiyong.github.io/issues/new",
-  },
-  editLink: {
-    text: "编辑此页",
-  },
-  primaryHue: { light: 210, dark: 195 },
-  footer: {
-    component: function CustomFooter() {
-      return <Footer />;
-    },
-  },
-  sidebar: {
-    autoCollapse: true,
-    defaultMenuCollapseLevel: 1,
-  },
-  toc: {
-    title: "文档结构",
-  },
-  themeSwitch: {
-    component(props) {
-      return (
-        <div className="flex items-end justify-between">
-          <ThemeSwitch {...props} />
-        </div>
-      );
-    },
-  },
-  navbar: {
-    component: function CustomNavbar(props) {
-      return <Navbar {...props} />;
-    },
-  },
-  head: () => (
+    "https://github.com/jiezhiyong/jiezhiyong.github.io/tree/main",
+  head: (
     <>
       <link
         href="https://nextra.site/favicon.png"
